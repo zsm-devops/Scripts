@@ -4,7 +4,7 @@ if [ -f "/etc/netplan/my_settings.yaml" ]; then
    echo "File exist"
 else
    cat > /etc/netplan/my_settings.yaml <<EOF
-# Let NetworkManager manage all devices on this system
+#  Let NetworkManager manage all devices on this system
 network:
   version: 2
   renderer: NetworkManager
