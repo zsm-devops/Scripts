@@ -16,7 +16,9 @@ DNS1="8.8.8.8"
 
 EOF
 
-   systemctl restart network
+   systemctl restart NetworkManager
+   nmcli networking off
+   nmcli networking on
 fi
 
 apt install -y openssh-server
